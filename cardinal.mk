@@ -20,11 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_plus device
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
-# Inherit some common Validus stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
-$(call inherit-product, vendor/validus/config/caf_fw.mk)
+# Inherit some common Cardinal stuff.
+$(call inherit-product, vendor/cardinal/common.mk)
 
-PRODUCT_NAME := validus_z2_plus
+PRODUCT_NAME := cardinal_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -45,4 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Maintainer info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Mahek Thaker (MR.HACKER)"
+DEVICE_MAINTAINERS="Danish Pathan (Danish1999)"
