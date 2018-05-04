@@ -45,3 +45,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Maintainer info
 PRODUCT_BUILD_PROP_OVERRIDES += \
 DEVICE_MAINTAINERS="Danish Pathan (Danish1999)"
+
+# Telephony packages
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+telephony-ext
